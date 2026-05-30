@@ -3,42 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LitleBite</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="contenido">
-        <nav>
+    <div class="container">
+        <nav class="navbar">
             <div class="nav-contenedor">
-                    <a href="#" class="logo">Mi Sitio Web</a>
+                <a href="#" class="logo">LitleBite</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul class="nav-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <a href="#">Inicio</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Galería</a>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Contacto</a>
                 </ul>
+                
+                <div class="car">
+                    <a href="" class="car-link"><span class="car-icon">🛒</span> Carrito</a>
+                </div>
             </div>
         </nav>
 
         <!-- Contenido principal -->
         <main class="hero">
-            <h1>Bienvenido a Mi Sitio Web</h1>
-            <p>Tu solución para todo lo relacionado con la tecnología.</p>
-            <a href="#" class="btn">Saber más</a>
+            <div class="hero-content">
+                <h1>Bienvenido a LitleBite</h1>
+                <p>sabor inigualable.</p>
+                <a href="#" class="btn">Saber más</a>
+            </div>
         </main>
 
-        <!-- Sección de características -->
-        <section class="features">
-            <div class="feature">
-                <h2>Servicio 1</h2>
-                <p>Descripción del servicio 1.</p>
-            </div>
-            <div class="feature">
-                <h2>Servicio 2</h2>
-                <p>Descripción del servicio 2.</p>
-            </div>
-            <div class="feature">
-                <h2>Servicio 3</h2>
-                <p>Descripción del servicio 3.</p>
+        <!-- Sección de top items  -->
+        <section class="best-seller">
+           <div class="best-seller-content">
+                <h2>Top Items</h2>
+                <div class="items">
+                    <article class="item">
+                        <img src="img/pizza.webp" alt="Item 1">
+                        <h3>Item 1</h3>
+                        <p>Descripción breve del item 1.</p>
+                    </article>
+                    <article class="item">
+                        <img src="img/pizza.webp" alt="Item 2">
+                        <h3>Item 2</h3>
+                        <p>Descripción breve del item 2.</p>
+                    </article>
+                    <article class="item">
+                        <img src="img/pizza.webp" alt="Item 3">
+                        <h3>Item 3</h3>
+                        <p>Descripción breve del item 3.</p>
+                    </article>
+                    <article class="item">
+                        <img src="img/pizza.webp" alt="Item 4">
+                        <h3>Item 4</h3>
+                        <p>Descripción breve del item 4.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
