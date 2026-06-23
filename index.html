@@ -1,90 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LitleBite ofrece pizzas artesanales, snacks y pedidos online con un estilo fresco y familiar.">
+    <link rel="canonical" href="https://www.litlebite.com/">
     <title>LitleBite</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <nav class="navbar">
+        <header class="navbar">
             <div class="nav-contenedor">
-                <a href="#" class="logo">LitleBite</a>
-                <div class="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="nav-links">
-                    <a href="#">Inicio</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Galería</a>
-                    <a href="#">Acerca de</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Contacto</a>
-                </ul>
-                
-                <div class="car">
-                    <a href="" class="car-link"><span class="car-icon">🛒</span> Carrito</a>
-                </div>
+                <a href="#inicio" class="logo">LitleBite</a>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </header>
 
-        <!-- Contenido principal -->
-        <main class="hero">
-            <div class="hero-content">
-                <h1>Bienvenido a LitleBite</h1>
-                <p>sabor inigualable.</p>
-                <a href="#" class="btn">Saber más</a>
-            </div>
+        <main>
+            <section class="hero" id="inicio">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <p class="eyebrow">Pizzería &amp; Snacks</p>
+                    <h1>Bienvenido a LitleBite</h1>
+                    <p>Sabores auténticos para compartir con la familia. Disfruta la mejor combinación de ingredientes frescos y atención cálida.</p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn primary">Ver Menu</a>
+                        <a href="#contacto" class="btn secondary">Haz tu pedido</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section" id="menu">
+                <div class="section-header">
+                    <h2>Menu destacado</h2>
+                    <p>Elige entre nuestras mejores opciones: pizzas clásicas, especiales y snacks ideales para compartir.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <img src="img/pizza1.jpg" alt="Pizza clásica">
+                        <h3>Pizza clásica</h3>
+                        <p>Masa crujiente, salsa especial y queso fundido.</p>
+                    </article>
+                    <article class="menu-card">
+                        <img src="img/pizza2.jpg" alt="Pizza especial">
+                        <h3>Pizza especial</h3>
+                        <p>Ingredientes premium con un toque artesanal.</p>
+                    </article>
+                    <article class="menu-card">
+                        <img src="img/snack.jpg" alt="Para compartir">
+                        <h3>Para compartir</h3>
+                        <p>Snacks y entradas perfectos antes de tu pizza favorita.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="gallery-section" id="galeria">
+                <div class="section-header">
+                    <h2>Galería</h2>
+                    <p>Una probada visual de nuestros platos y el ambiente que te recibe.</p>
+                </div>
+                <div class="gallery-grid">
+                    <img src="img/pizza2.jpg" alt="Pizza" />
+                    <img src="img/pizza2.jpg" alt="Porción de pizza" />
+                    <img src="img/pizza2.jpg" alt="Ambiente LitleBite" />
+                    <img src="img/pizza2.jpg" alt="Plato especial" />
+                </div>
+            </section>
+
+            <section class="about-section" id="nosotros">
+                <div class="about-content">
+                    <h2>Nosotros</h2>
+                    <p>En LitleBite nos apasiona crear comidas que conectan. Usamos ingredientes frescos y recetas caseras para que cada visita sea una experiencia única.</p>
+                    <ul class="about-list">
+                        <li>Preparación artesanal</li>
+                        <li>Entrega rápida y segura</li>
+                        <li>Atención cercana y familiar</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="social-section">
+                <div class="section-header">
+                    <h2>Síguenos en redes</h2>
+                    <p>Descubre nuestras novedades, promociones y contenido con sabor.</p>
+                </div>
+                <div class="social-buttons">
+                    <a href="#" class="social-btn facebook">Facebook</a>
+                    <a href="#" class="social-btn instagram">Instagram</a>
+                    <a href="#" class="social-btn whatsapp">WhatsApp</a>
+                    <a href="#" class="social-btn tiktok">TikTok</a>
+                </div>
+            </section>
+
+            <section class="contact" id="contacto">
+                <div class="section-header">
+                    <h2>Contacto</h2>
+                    <p>Escríbenos y te ayudamos con tu pedido o reservación.</p>
+                </div>
+                <form action="#" method="post" class="contact-form">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit" class="btn primary">Enviar mensaje</button>
+                </form>
+            </section>
         </main>
 
-        <!-- Sección de top items  -->
-        <section class="best-seller">
-           <div class="best-seller-content">
-                <h2>Top Items</h2>
-                <div class="items">
-                    <article class="item">
-                        <img src="img/pizza.webp" alt="Item 1">
-                        <h3>Item 1</h3>
-                        <p>Descripción breve del item 1.</p>
-                    </article>
-                    <article class="item">
-                        <img src="img/pizza.webp" alt="Item 2">
-                        <h3>Item 2</h3>
-                        <p>Descripción breve del item 2.</p>
-                    </article>
-                    <article class="item">
-                        <img src="img/pizza.webp" alt="Item 3">
-                        <h3>Item 3</h3>
-                        <p>Descripción breve del item 3.</p>
-                    </article>
-                    <article class="item">
-                        <img src="img/pizza.webp" alt="Item 4">
-                        <h3>Item 4</h3>
-                        <p>Descripción breve del item 4.</p>
-                    </article>
+        <footer class="footer">
+            <div class="footer-content">
+                 <p class="footer-brand"><span>By: </span><a class="xandtech" href="https://xandt3ch.com" target="_blank" rel="noopener noreferrer">XandTech</a></p>
+                <p>© 2026 LitleBite. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
             </div>
-        </section>
-
-        <!-- Sección de contacto -->
-        <section class="contact">
-            <h2>Contáctanos</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="message" placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <footer>
-
-            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
         </footer>
     </div>
-    
 </body>
 </html>

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.litlebite.com/sitemap.xml
+Host: www.litlebite.com
